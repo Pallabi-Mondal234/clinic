@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+.homepage-content span {
+    font-weight: 700;
+    display: block;
+    font-size: 4.5rem;
+    color: white;
+}
+
+header {
+    background-color: rgb(116, 189, 231);
+}
+
+.navbar {
+    background-color: rgb(116, 189, 231);
+}
+
+.nav-link {
+    color: rgb(247, 244, 244);
+    padding: 25px;
+    font-size: 1.2rem;
+}
+
+.apt-btn {
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.homepage {
+    background: url("assets/main-slider-img-1.jpg");
+    height: 85vh;
+    background-size: cover;
+}
+
+.button {
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3sease;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+.button-active {
+    background-color: white;
+    color: rgb(116, 189, 231);
+}
+
+.homepage-content {
+    position: absolute;
+    top: 35%;
+}
+
+.bullet-box {
+    list-style: none;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    column-gap: 20px;
+}
+
+.bullet li {
+    padding-left: 10px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.bullet-box li::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: none;
+}
+
+.bullet-box li:hover {
+    background-color: white;
+    width: 12px;
+    height: 12px;
+}
+
+/* healthcare-info section starts here */
+.healthcare-info{
+    min-height: 250px;
+    background-color: #fbfbfb;
+}
+.info-wrapper {
+    position: relative;
+}
+
+.info-sec {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-22%);
+    background-color: white;
+    margin: 40px auto;
+}
+
+.box {
+    flex: 1;
+    padding: 35px;
+}
+.info-sec h2 {
+    color: rgb(116, 189, 231);
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.opening-hours{
+    border-bottom: 4px solid rgb(116, 189, 231);
+}
+.opening-hours p{
+    border-bottom: 1px solid #555;
+    padding-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+span {
+    font-weight: bold;
+    color: rgb(116, 189, 231);
+    font-size: 0.9rem;
+}
+.doctors-timetable{
+    border-bottom: 4px solid rgb(16, 153, 233);
+}
+.doctors-timetable .button {
+    color: rgb(116, 189, 231);
+    padding: 10px 15px;
+    border: 1px solid rgb(116, 189, 231);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.doctors-timetable img{
+    /* fill: rgb(116, 189, 231); */
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: rgb(116, 189, 231);
+}
+.emergency-cases{
+    border-bottom: 4px solid rgb(6, 58, 88);
+}
+.phone {
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* service section starts here */
+.service{
+    background-color: #fbfbfb;
+}
+.service-info{
+    background-color: white;
+}
+h3{
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+}
+
+h3:hover{
+    border-bottom: 2px solid rgb(16, 153, 233);
+
+}
+.service-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+    padding-left: 0;
+}
+.service-content p{
+    font-size: 0.9rem;
+}
+/* poster section starts here */
+.clinic-poster{
+    background: url("assets/fullwidth-img-1.jpg");
+    background-size: cover;
+}
+.poster-content{
+    width: 45%;
+    color: white;
+    padding: 40px 0;
+}
+.poster-content img{
+    margin: 20px 0;
+}
+.poster-content p{
+    padding: 15px 0;
+    color: white;
+}
+.poster-content>:nth-child(1){
+    font-size: 2.5rem;
+}
+.poster-content>:nth-child(3){
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.poster-content>:nth-child(4){
+    font-size: 1rem;
+    font-weight: 100;
+}
+/* department section starts here */
+.dept-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+/* banner section starts here */
+.banner{
+    background: url("assets/hospitalroom.jpg");
+    min-height: 600px;
+    background-size: cover;
+}
+.banner-wrapper{
+    position: relative;
+}
+.banner img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(160%);
+}
+.heading{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translate(-45%, 350%);
+    width: 95%;
+    text-align: center;
+    color: rgb(13, 145, 221);
+}
+.heading svg{
+    height: 30px;
+    width: 30px;
+}
+.left-arrow{
+    position: absolute;
+    left: 0;
+    top: 6%;
+}
+.right-arrow{
+    position: absolute;
+    right: 0;
+    top: 6%;
+}
+/* team section starts here */
+.medical-team{
+    background-color: #fbfbfb;
+}
+.doc-img img{
+    height: auto;
+}
+.doc-details{
+    padding: 20px;
+}
+.doc-details p{
+    font-size: 0.8rem;
+    opacity: 0.4;
+}
+.doc-details h4{
+    font-size: 1.3rem;
+}
+.doc-details svg{
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+}
+.doc-details p{
+    justify-content: left;
+}
+/* appointment section */
+.bg-content1{
+    /* background-color: rgb(0, 138, 218); */
+}
+
+/* client section starts here */
+.client{
+    background-color: #fbfbfb;
+}
