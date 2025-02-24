@@ -1,0 +1,638 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.homepage-content h1 {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+/* header {
+    background-color: rgba(255, 255, 255, 0.2);
+} */
+.text-white {
+    color: #eff1f2;
+}
+
+.text {
+    border-right: none;
+}
+
+header .head-sec {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.top-section,
+.location,
+.social-box,
+.nav-top-mid,
+.top-section .social-box>:nth-child(4) {
+    border-right: 1px solid white;
+}
+
+.social-box i,
+.search-icon i {
+    color: white;
+    font-size: 20px;
+}
+
+.social-box:last-child(2) {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header .nav-main {
+    top: 40px;
+}
+
+header .nav-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-brand img {
+    height: auto;
+}
+
+.navbar .nav-item {
+    padding: 0 25px;
+}
+
+.navbar .nav-link {
+    color: rgb(247, 244, 244);
+    padding: 22px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-item .nav-link:hover {
+    color: rgb(116, 189, 231);
+}
+
+.navbar-nav .nav-item:nth-child(2) a:after,
+.navbar-nav .nav-item:nth-child(3) a:after,
+.navbar-nav .nav-item:nth-child(4) a:after,
+.navbar-nav .nav-item:nth-child(6) a:after {
+    content: "";
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    margin-left: 4px;
+    background-image: url("../assets/angle-down-solid.svg");
+    background-size: cover;
+}
+
+.apt-btn {
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.homepage-content span {
+    font-weight: 700;
+    display: block;
+    font-size: 4.5rem;
+    color: white;
+}
+
+.homepage {
+    background: url("../assets/main-slider-img-1.jpg");
+    height: 85vh;
+    background-size: cover;
+}
+
+.button {
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3sease;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: white;
+    color: rgb(116, 189, 231);
+}
+
+.homepage-content {
+    position: absolute;
+    top: 35%;
+}
+
+/* healthcare-info section starts here */
+.healthcare-info {
+    min-height: 250px;
+    background-color: #fbfbfb;
+}
+
+.info-wrapper {
+    position: relative;
+}
+
+.info-sec {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-22%);
+    background-color: white;
+    margin: 40px auto;
+}
+
+.box {
+    flex: 1;
+    padding: 35px;
+}
+
+.info-sec h2 {
+    color: rgb(4, 143, 223);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #555;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opening-hours {
+    border-bottom: 6px solid rgb(116, 189, 231);
+}
+
+.opening-hours p {
+    border-bottom: 1px solid #b6b6b6;
+    padding-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+span {
+    font-weight: bold;
+    color: rgb(116, 189, 231);
+    font-size: 0.9rem;
+}
+
+.doctors-timetable {
+    border-bottom: 6px solid rgb(16, 153, 233);
+}
+
+.doctors-timetable .button {
+    color: rgb(116, 189, 231);
+    padding: 10px 15px;
+    border: 1px solid rgb(116, 189, 231);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.doctors-timetable svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: rgb(116, 189, 231);
+}
+
+.emergency-cases {
+    border-bottom: 6px solid rgb(0, 93, 146);
+}
+
+.emergency-cases svg {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+}
+
+.phone {
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* service section starts here */
+.service {
+    background-color: #f7fafb;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 74px;
+    height: 2px;
+    background-color: #5ab2df;
+    margin-top: 20px;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.service-content p {
+    font-size: 0.9rem;
+}
+
+/* poster section starts here */
+.clinic-poster {
+    background: url("../assets/fullwidth-img-1.jpg");
+    background-size: cover;
+}
+
+.poster-content {
+    width: 45%;
+    color: white;
+    padding: 40px 0;
+}
+
+.poster-content img {
+    margin: 20px 0;
+}
+
+.poster-content p {
+    padding: 15px 0;
+    color: white;
+}
+
+.poster-content>:nth-child(1) {
+    font-size: 2.5rem;
+}
+
+.poster-content>:nth-child(3) {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.poster-content>:nth-child(4) {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+/* department section starts here */
+.dept-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+/* banner section starts here */
+.banner {
+    background: url("../assets/hospitalroom.jpg");
+    min-height: 600px;
+    background-size: cover;
+}
+
+.banner-wrapper {
+    position: relative;
+}
+
+.banner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(160%);
+}
+
+.heading {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translate(-45%, 350%);
+    width: 95%;
+    text-align: center;
+    color: rgb(13, 145, 221);
+}
+
+.heading svg {
+    height: 30px;
+    width: 30px;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 0;
+    top: 6%;
+    height: 10px;
+    width: 10px;
+
+}
+
+.right-arrow {
+    position: absolute;
+    right: 0;
+    top: 6%;
+    height: 10px;
+    width: 10px;
+
+}
+
+.lower-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: TranslateY(68%);
+}
+
+.lower-name>:first-child {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+}
+
+.lower-name>:last-child {
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    margin-left: -27px;
+    margin-top: 15px;
+}
+
+/* team section starts here */
+.medical-team {
+    background-color: #f7fafb;
+}
+
+.doc-img {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 5, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    /* display: none; */
+}
+
+.overlay ul li {
+    list-style: none;
+}
+
+.overlay ul li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.overlay ul li a i {
+    font-size: 20px;
+    color: white;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.doc-info:hover .doc-content {
+    background-color: #fff;
+    box-shadow: 1px solid #555;
+}
+
+.overlay:hover .doc-details {
+    background-color: #fff;
+    box-shadow: 1px solid #555;
+}
+
+.doc-img img {
+    height: auto;
+}
+
+.doc-details {
+    padding: 20px;
+}
+
+.doc-details p {
+    font-size: 0.8rem;
+    opacity: 0.4;
+}
+
+.doc-details h4 {
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+}
+
+.doc-details svg {
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+}
+
+.doc-details p {
+    justify-content: left;
+}
+
+.doc-content:hover .overlay {
+    opacity: 1 !important;
+}
+
+.doc-content:hover .doc-img .overlay{
+    /* background-color: #fff;
+    box-shadow: 1px solid #555; */
+    /* display: block; */
+    opacity: 1;
+}
+/* appointment section */
+.appointment {
+    position: relative;
+}
+
+.blue-bg {
+    position: absolute;
+    background-color: #56b0d2;
+    width: 50%;
+    height: 100%;
+}
+
+.appointment-form {
+    background-color: #56b0d2;
+    padding: 50px;
+    color: white;
+    width: 50%;
+    z-index: 2;
+}
+
+.appointment-form h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.appointment-form h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #89c8e0;
+    border-radius: 0;
+    color: white;
+    padding-left: 0;
+    width: 85%;
+    padding: 12px 0;
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-input:focus {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+    border-bottom: 1px solid white;
+}
+
+.appointment-form svg {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 15%;
+    bottom: 30%;
+}
+
+.news-section {
+    padding: 50px;
+    width: 50%;
+}
+
+.news-item {
+    margin-bottom: 15px;
+}
+
+.news-item p {
+    font-size: 1.5rem;
+    color: #2a93c9;
+}
+
+.news-section .news-item>:last-child {
+    font-size: 0.9rem;
+    justify-content: flex-start;
+}
+
+.fa-user {
+    color: #7a7a7a;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+/* client section starts here */
+.client {
+    background-color: #f9fbfc;
+}
+
+/* footer section starts here */
+footer {
+    background-color: #919ba6;
+    color: white;
+}
+
+footer p {
+    color: #eff2f3;
+}
+
+.footer-col h4 {
+    position: relative;
+}
+
+.footer-col h4::after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 2px;
+    background-color: #c5cbcf;
+    margin: 20px 0;
+}
+
+.footer-top,
+.footer-main {
+    border-bottom: 1px solid #a1aab3;
+}
+
+.top-content input {
+    padding: 15px 40px 15px 10px;
+    width: 28%;
+    border: none;
+    background-size: 16px;
+    background-color: #a1aab3;
+}
+
+.top-content input::placeholder {
+    color: #eff2f3;
+    font-size: 20px;
+}
+
+.fa-envelope-o {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    font-size: 25px;
+}
+
+.social-icons i {
+    color: #eff2f3;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+address p {
+    padding: 0;
+}
+
+.links li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.links li a {
+    list-style: none;
+    text-decoration: none;
+    color: #eff2f3;
+}
+
+.footer-lower {
+    background-color: #8f98a3;
+}

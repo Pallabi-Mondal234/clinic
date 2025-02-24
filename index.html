@@ -8,16 +8,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="head-sec fixed-top">
+            <div class="container">
+                <div class="d-flex top-section">
+                    <div class="location pe-4">
+                        <p class="flex-fill text-white">Location:121 Wallstreet street,NY, USA</p>
+                    </div>
+                    <div class="nav-top-mid d-flex justify-content-between flex-fill pe-4">
+                        <p class="text-white text ps-4">Email:info@beclinic.com</p>
+                        <p class="text-white">For emergency cases: <b> 800 123 45 67</b></p>
+                    </div>
+                    <div class="social-box d-flex gap-4">
+                        <div class="social-icons p-2">
+                            <a href="www.linkedin.com"><i class="fa fa-linkedin ps-4"></i></a>
+                            <a href="www.twitter.com"><i class="fa fa-twitter"></i></a>
+                            <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+                            <a href="www.instagram.com"><i class="fa fa-instagram pe-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="search-icon ps-4 p-2">
+                        <i class="fa fa-search pe-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm fixed-top nav-main">
             <div class="container">
                 <a class="nav-brand" href="#"><img src="assets/invert-logo.webp" alt="logo" title="header-logo"
-                        height="50" width="120"></a>
+                        height="30" width="200"></a>
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Departments</a></li>
@@ -26,7 +51,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
                 </ul>
-                <a class="apt-btn" href="#">MAKE AN APPOINTMENT</a>
+                <a class="apt-btn button" href="#">MAKE AN APPOINTMENT</a>
             </div>
         </nav>
     </header>
@@ -40,11 +65,6 @@
                         <li><a class="button py-3 px-4" href="#">Get In Touch</a></li>
                     </ul>
                 </div>
-                <ul class="bullet-box">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </div>
         </div>
     </section>
@@ -63,12 +83,24 @@
                         <p>Your treatment plan is designed for steady progress, with every phase promptly implemented.
                         </p>
                         <a class="button py-3 px-4" href="#">
-                            <img src="assets/calendar-regular.svg" alt="calender" title="calender" height="5" width="5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#74C0FC"
+                                    d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 
+                            40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 
+                            64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24
+                             24l0 40L152 64l0-40zM48 192l352 0 0 256c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256z" />
+                            </svg>
                             View Timetable</a>
                     </div>
                     <div class="box emergency-cases">
                         <h2>Emergency Cases</h2>
-                        <p class="phone">&#x1F4DE; 800 123 45 67</p>
+                        <p class="phone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="#74C0FC"
+                                    d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1
+                         30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1
+                          38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 
+                         11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                            </svg>800 123 45 67</p>
                         <p>Your treatment plan is designed for steady progress, with every phase promptly implemented.
                         </p>
                     </div>
@@ -182,30 +214,32 @@
     <section class="banner">
         <div class="container">
             <div class="banner-wrapper">
-            <div class="banner-content">
-                <img src="assets/team-2.jpg" alt="doctor-img" title="doctor-img" height="100" width="100">
-                <div class="heading">
-                    <svg class="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                        <path fill="#74C0FC"
-                            d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 
+                <div class="banner-content">
+                    <img src="assets/team-2.jpg" alt="doctor-img" title="doctor-img" height="100" width="100">
+                    <div class="heading">
+                        <svg class="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="#74C0FC" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 
                         45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6
                          118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
-                    </svg>
-                    <h2>"Health is a state of complete physical, mental, and social well-being,
-                        and not merely the absence of disease or infirmity.</h2>
-                    <svg class="right-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                        <path fill="#74C0FC"
-                            d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 
+                        </svg>
+                        <h2>"Health is a state of complete physical, mental, and social well-being,
+                            and not merely the absence of disease or infirmity.</h2>
+                        <svg class="right-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="#74C0FC" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 
                            160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 
                            0-45.3s32.8-12.5 45.3 0l160 160z" />
-                    </svg>
+                        </svg>
+                        <div class="lower-name">
+                            <p>Zack Effron</p>
+                            <p>SANTA MONICA, CA</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- <div class="lower-name">
+                    <p>Zack Effron</p>
+                    <p>SANTA MONICA, CA</p>
+                </div> -->
             </div>
-            <!-- <div class="lower-name">
-                <p>Zack Effron</p>
-                <p>SANTA MONICA, CA</p>
-            </div> -->
-        </div>
         </div>
     </section>
     <section class="medical-team">
@@ -215,69 +249,128 @@
                 <div class="doctor-section d-flex justify-content-center align-items-center pt-5 pb-5">
                     <div class="doctor-info">
                         <div class="doctor-content">
-                            <div class="doc-img"><img src="assets/team-1.jpg" alt="team1" title="team1" height="260" width="323"></div>
+                            <div class="doc-img">
+                                <img src="assets/team-1.jpg" alt="team1" title="team1" height="260" width="323">
+                                <div class="overlay">
+                                    <ul class="d-flex gap-3">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div class="overlay">
+                                <ul class="d-flex gap-3">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div> -->
                             <div class="doc-details">
                                 <p>CONSULTING DOCTOR</p>
                                 <h4>Dr. Sarah Jhonson</h4>
-                                <p><svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="#9a9996" d="M16 64C16 28.7 44.7 0 80
+                                <p><svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <path fill="#9a9996" d="M16 64C16 28.7 44.7 0 80
                                      0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 
                                     64zM144 448c0 8.8 7.2 16 16 16l64 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-64 0c-8
-                                    .8 0-16 7.2-16 16zM304 64L80 64l0 320 224 0 0-320z"/></svg>+800 12345 67</p>
-                                <p><svg class="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#9a9996" d="M48 64C21.5 
+                                    .8 0-16 7.2-16 16zM304 64L80 64l0 320 224 0 0-320z" />
+                                    </svg>+800 12345 67</p>
+                                <p><svg class="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="#9a9996" d="M48 64C21.5 
                                     64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1
                                      19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7
-                                      64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>info@beclinic.com</p>
+                                      64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                    </svg>info@beclinic.com</p>
                             </div>
                         </div>
                     </div>
                     <div class="doctor-info">
                         <div class="doctor-content">
-                            <div class="doc-img"><img src="assets/team-2.jpg" alt="team1" title="team1" height="260" width="323"></div>
+                            <div class="doc-img">
+                                <img src="assets/team-2.jpg" alt="team1" title="team1" height="260" width="323">
+                                <div class="overlay">
+                                    <ul class="d-flex gap-3">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="doc-details">
                                 <p>DENTAL HYGIENIST</p>
                                 <h4>Dr. Greg House</h4>
-                                <p><svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="#9a9996" d="M16 64C16 28.7 44.7 0 80
+                                <p><svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <path fill="#9a9996" d="M16 64C16 28.7 44.7 0 80
                                      0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 
                                     64zM144 448c0 8.8 7.2 16 16 16l64 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-64 0c-8
-                                    .8 0-16 7.2-16 16zM304 64L80 64l0 320 224 0 0-320z"/></svg>+800 12345 67</p>
-                                    <p><svg class="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#9a9996" d="M48 64C21.5 
+                                    .8 0-16 7.2-16 16zM304 64L80 64l0 320 224 0 0-320z" />
+                                    </svg>+800 12345 67</p>
+                                <p><svg class="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="#9a9996" d="M48 64C21.5 
                                         64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1
                                          19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7
-                                          64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>info@beclinic.com</p>
+                                          64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                    </svg>info@beclinic.com</p>
                             </div>
                         </div>
                     </div>
                     <div class="doctor-info">
                         <div class="doctor-content">
-                            <div class="doc-img"><img src="assets/team-3.jpg" alt="team1" title="team1" height="260" width="323"></div>
+                            <div class="doc-img">
+                                <img src="assets/team-3.jpg" alt="team1" title="team1" height="260" width="323">
+                                <div class="overlay">
+                                    <ul class="d-flex gap-3">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="doc-details">
                                 <p>PEDIATRICIAN</p>
                                 <h4>Dr. Marta Stewert</h4>
-                                <p><svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="#9a9996" d="M16 64C16 28.7 44.7 0 80
+                                <p><svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <path fill="#9a9996" d="M16 64C16 28.7 44.7 0 80
                                      0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 
                                     64zM144 448c0 8.8 7.2 16 16 16l64 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-64 0c-8
-                                    .8 0-16 7.2-16 16zM304 64L80 64l0 320 224 0 0-320z"/></svg>+800 12345 67</p>
-                                    <p><svg class="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#9a9996" d="M48 64C21.5 
+                                    .8 0-16 7.2-16 16zM304 64L80 64l0 320 224 0 0-320z" />
+                                    </svg>+800 12345 67</p>
+                                <p><svg class="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="#9a9996" d="M48 64C21.5 
                                         64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1
                                          19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7
-                                          64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>info@beclinic.com</p>
+                                          64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                    </svg>info@beclinic.com</p>
                             </div>
                         </div>
                     </div>
                     <div class="doctor-info">
                         <div class="doctor-content">
-                            <div class="doc-img"><img src="assets/team-4.jpg" alt="team1" title="team1" height="260" width="323"></div>
+                            <div class="doc-img">
+                                <img src="assets/team-4.jpg" alt="team1" title="team1" height="260" width="323">
+                                <div class="overlay">
+                                    <ul class="d-flex gap-3">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="doc-details">
                                 <p>CARDIAC SUROGEN</p>
                                 <h4>Dr. Night Shyamalan</h4>
-                                <p><svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="#9a9996" d="M16 64C16 28.7 44.7 0 80
+                                <p><svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <path fill="#9a9996" d="M16 64C16 28.7 44.7 0 80
                                     0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 
                                    64zM144 448c0 8.8 7.2 16 16 16l64 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-64 0c-8
-                                   .8 0-16 7.2-16 16zM304 64L80 64l0 320 224 0 0-320z"/></svg>+800 12345 67</p>
-                                <p><svg class="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#9a9996" d="M48 64C21.5 
+                                   .8 0-16 7.2-16 16zM304 64L80 64l0 320 224 0 0-320z" />
+                                    </svg>+800 12345 67</p>
+                                <p><svg class="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="#9a9996" d="M48 64C21.5 
                                     64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1
                                      19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7
-                                      64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>info@beclinic.com</p>
+                                      64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                    </svg>info@beclinic.com</p>
                             </div>
                         </div>
                     </div>
@@ -286,18 +379,54 @@
         </div>
     </section>
     <section class="appointment">
-        <div class="container-fluid">
-            <div class="bg-sec d-flex">
-                <div class="bg-content1 w-50">
-                    <div class="container">
-                        <div class="appointment">
-                            <!-- <h3>Make an Appointment</h3> -->
-                        </div>
+        <div class="container-fluid p-0">
+            <div class="blue-bg"></div>
+            <div class="container p-0">
+                <div class="row appointment-section">
+                    <div class="col-md-6 appointment-form">
+                        <h2>Make an Appointment</h2>
+                        <form>
+                            <div class="mb-3">
+                                <select name="" id="" class="form-input">
+                                    <option value="">Select Department</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-input">
+                                    <option>Select Doctor</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-input" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-input" placeholder="Phone">
+                            </div>
+                            <div class="mb-3">
+                                <input type="date" class="form-input" placeholder="mm / dd / yyyy">
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <input type="time/" class="form-input" placeholder="Time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff"
+                                d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0
+                                1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280
+                                243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                            </div>
+                        </form>
                     </div>
-                </div>
-                <div class="bg-content2 w-50">
-                    <div class="container">
-
+                    <div class="col-md-6 news-section">
+                        <h3>Latest News</h3>
+                        <div class="news-item border-bottom border-black">
+                            <p>Difficulties in Teaching Diagnostic Reasoning in the Digital Age: the Critical role of
+                                the Teacher-Clinician
+                                Mentor.
+                            </p>
+                            <p><i class="fa fa-user"></i>admin</p>
+                        </div>
+                        <div class="news-item">
+                            <p>Two Long-Acting Bronchodilators in a Single Metered Dose Inhaler</p>
+                            <p><i class="fa fa-user"></i>admin</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -322,12 +451,78 @@
         </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="footer-header">
-                <div class="header-content"></div>
+        <div class="footer-top pb-5 pt-5">
+            <div class="container">
+                <div class="top-content position-relative d-flex justify-content-between">
+                    <input type="text" name="Name" placeholder="Enter Your Name">
+                    <i class="fa fa-envelope-o"></i>
+                    <div class="social-icons d-flex gap-2">
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-main"></div>
-            <div class="footer-lower"></div>
+        </div>
+        <div class="footer-main pt-5 pb-5">
+            <div class="container">
+                <div class="footer-main-content  d-flex gap-4">
+                    <div class="footer-col flex-column w-25">
+                        <img src="assets/invert-logo.webp" alt="logo" height="50" width="150">
+                        <p>Choosing the right hospital and physicians are more important factors to consider that
+                            significantly
+                            influence a patient's treatment. The preferred choice for many patient is choosing private
+                            care.
+                        </p>
+                    </div>
+                    <div class="footer-col flex-column w-25">
+                        <h4>Departments</h4>
+                        <ul class="links p-0">
+                            <li><a href="#">Neurology</a></li>
+                            <li><a href="#">Traumatology</a></li>
+                            <li><a href="#">Gynaecology</a></li>
+                            <li><a href="#">Nephrology</a></li>
+                            <li><a href="#">Cardiology</a></li>
+                            <li><a href="#">Pulmonary</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col flex-column w-25">
+                        <h4>Head Office</h4>
+                        <address class="links p-0 pb-2">
+                            <p>4096 N Highland St, Airlington</p>
+                            <p>VA 321101, USA</p>
+                            <li><a href="#">info@beclinic.com</a></li>
+                            <p>800 1234 56 78</p>
+                        </address>
+                        <ul class="links p-0">
+                            <li>Mon-Thu : 9:30 - 21:00</li>
+                            <li>Fri : 6:00 - 21:00</li>
+                            <li>Sat : 10:00 - 15:00</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col flex-column w-25">
+                        <h4>Quick Links</h4>
+                        <ul class="links p-0">
+                            <li><a href="#">Gallerys</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower pt-3 pb-3">
+            <div class="container">
+                <div class="lower-content d-flex justify-content-between">
+                    <div class="">
+                        <p>Terms and Conditions Privacy Policy</p>
+                    </div>
+                    <div class="">
+                        <p>Zemez &copy;, all rights reserved,</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
