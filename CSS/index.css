@@ -24,7 +24,12 @@ header .head-sec {
     background-color: rgba(255, 255, 255, 0.2) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
+.head-sec ul li{
+    list-style: none;
+}
+.head-sec ul li a{
+    display: inline-block;
+}
 .top-section,
 .location,
 .social-box,
@@ -48,13 +53,16 @@ header .head-sec {
 }
 
 header .nav-main {
-    top: 40px;
+    top: 57px;
 }
 
 header .nav-top {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
+.nav-top-mid a{
+    text-decoration: none;
+    color: white;
+}
 .navbar-brand img {
     height: auto;
 }
@@ -421,15 +429,16 @@ h3::after {
     opacity: 1;
 }
 
-.doc-info:hover .doc-content {
+.overlay:hover .doc-details
+.doc-details:hover {
     background-color: #fff;
-    box-shadow: 1px solid #555;
+    box-shadow: 5px  #a7a7a7;
 }
 
-.overlay:hover .doc-details {
+/* .overlay:hover .doc-details {
     background-color: #fff;
     box-shadow: 1px solid #555;
-}
+} */
 
 .doc-img img {
     height: auto;
